@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 2;
+    color:#fff;
+    padding-top: 80px;
+    background-color: #181818;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+
+/* HEADER
+------------------------------- */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    z-index: 100;
+    background-color: #000;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    width: 164px;
+    height: 50px;
+}
+
+header h1 img {
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 40px;
+}
+
+header nav a:hover {
+    color: red;
+}
+
+header .handset {
+    width: 24px;
+    margin: 0 10px 25px 0;
+}
+
+header .phone {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.phone span {
+    font-weight: normal;
+    font-size: 0.75rem;
+    padding-left: 3px;
+}
+
+/*HOME
+------------------------------- */
+
+.home-content {
+    background-image: url(../images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 611px;
+}
+
+.authentic {
+    background-color: #000;
+    padding: 0 4%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 80px 0 50px;
+}
+
+.good {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 260px;
+}
+
+.good img {
+    height: 316px;
+}
+
+.good-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 316px;
+    width: 512px;
+    padding: 15px 0 0 20px;
+}
+
+.good-text p {
+    padding: 15px 0;
+}
+
+.thum2 {
+    text-align: end;
+    padding: 0 0 0;
+    position: relative;
+    bottom: 140px;
+}
+
+.thum2 img{
+    height: 280px;
+}
+
+.manu {
+    width: 100%;
+}
+
+.menu .container {
+    margin: 0 auto;
+    width: 492px;
+}
+
+.menu h2 {
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    background-color: #181818;
+    width: 100px;
+}
+
+.noodles {
+    display: flex;
+    flex-flow: column wrap;
+    height: 180px;
+    border-top: solid 1px #DDDDDD;
+    padding-top: 45px;
+    width: 492px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 245px;
+    padding: 0 0 0 25px;   
+}
+
+.food {
+    display: flex;
+    flex-flow: column wrap;
+    height: 120px;
+    border-top: solid 1px #DDDDDD;
+    padding-top: 45px;
+    width: 492px;
+}
+
+.others {
+    display: flex;
+    flex-flow: column wrap;
+    height: 175px;
+    border-top: solid 1px #DDDDDD;
+    padding-top: 45px;
+    width: 492px;
+}
+
+.multiple {
+    text-align: center;
+}
+
+.multiple img {
+    height: 280px;
+    position: relative;
+    top: 140px;
+}
+
+footer .container {
+    text-align: center;
+    background-color: #1F1F1F;
+    padding: 220px 0 50px;
+    line-height: 1;
+}
+
+footer a {
+    height: 100px;
+    margin: 0 auto 30px;
+    display: block;
+    width: 330px;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+footer span {
+    padding: 0;
+}
+
+/* スマホ向け（画面幅が600px以下） */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    header h1 {
+        height: 30px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    header li a {
+        font-size: 0.875rem;
+        margin-right: 4vw;
+    }
+
+    header .handset {
+        width: 18px;
+    }
+
+    header .phone {
+        font-size: 0.75rem;
+
+    }
+
+    header span {
+        font-size: 0.625rem;
+    }
+
+    .home-content {
+        height: 210px;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        padding: 60px 0 20px;
+    }
+
+    .good {
+        flex-direction: column;
+        padding-bottom: 130px;
+    }
+
+    .good-text {
+        padding: 25px 0 0;
+        width: 100%;
+    }
+
+    .good-text p {
+        padding: 9px 0;
+    }
+
+    .thum2 {
+        bottom: 59px;
+    }
+
+    .thum2 img {
+        height: 118px;
+    }
+
+    .menu .container {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 4% 30px;
+    }
+    
+    .noodles, .food, .others {
+        height: auto;
+        width: 100%;
+        padding-top: 40px;
+    }
+    
+    .item {
+        width: 358px;
+        padding: 0 0 0 20px;  
+        max-width: 100%; 
+    }
+
+    .multiple {
+        padding: 0 4%;
+    }
+
+    .multiple img {
+        height: 118px;
+        top: 59px;
+    }
+
+    footer .container {
+        padding: 100px 0 20px;
+    }
+
+}
+
+/* タブレット向け（画面幅が601pxから900px） */
+@media (min-width: 601px) and (max-width: 900px) {
+    .good {
+        flex-direction: column;
+    }
+    
+    .good img {
+        height: auto;
+    }
+
+    .good-text {
+        width: 100%;
+    }
+
+    .thum2 img {
+        height: auto;
+    }
+
+    .multiple img {
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
