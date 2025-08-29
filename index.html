@@ -22,56 +22,54 @@
     <link rel="shortcut icon" sizes="192x192" href="images/shortcut.png">
     <meta name="last-modified" content="Sun, 00 Mar 2025 00:00:00 GMT">
     <meta name="robots" content="noindex">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <div id="home" class="big-bg">
-      <header>
-        <div>
-          <h1>
-            <a href="index.html">
-              <img src="images/logo.png" alt="名もなき中華料理屋">
-            </a>
-          </h1>
+    <header class="header container">
+      <h1 class="h-logo">
+        <a class="h-logo-btn" href="">
+          <img src="images/logo.png" alt="名もなき中華料理屋">
+        </a>
+      </h1>
 
-          <nav>
-            <ul>
-              <li><a href="#menu">メニュー</a></li>
-              <li><img src="images/handset.png" class="handset"></li>
-              <li class="phone">03-0000-0000<br>
-                <span>定休日：火水</span></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <nav>
+        <ul class="header-menu">
+          <li class="h-menu"><a class="menu-btn" href="#menu">メニュー</a></li>
+          <li class="h-handset"><img src="images/handset.png" class="handset"></li>
+          <li class="h-phone">03-0000-0000<br>
+            <span class="h-holiday">定休日：火水</span></li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="home-content wrapper">
-      </div><!-- /.home-content -->
-    </div><!-- /#home -->
+    <div class="home-content container">
+    </div>
 
     <div class="authentic">
-      <h2>本格中華を求めて三千里</h2>
+      <h2 class="heading">本格中華を求めて三千里</h2>
       <div class="good">
-        <img src="images/thum1.jpg">
+        <img class="good-img" src="images/cooking.jpg">
         <div class="good-text">
-          <p>ウマい中華とはなにか？</p>
-          <p>その答えを求めて<br>
+          <p class="good-font">ウマい中華とはなにか？</p>
+          <p class="good-font">その答えを求めて<br>
              30年かけて中国で修行してきました。</p>
-          <p>ぜひ食べにきてください。</p>
+          <p class="good-font">ぜひ食べにきてください。</p>
         </div>
       </div>
     </div>
-    <div class="thum2">
-      <img src="images/thum2.jpg">
+
+    <div class="subuta">
+      <img  class="subuta-img" src="images/subuta.jpg">
     </div>
+
     <div class="menu" id="menu">
-      <div class="container">
-      <h2>メニュー</h2>
-        <h3>麵もの</h3>
+      <h2 class="heading">メニュー</h2>
+      <div class="menu-content">
+        <h3 class="menu-heading">麵もの</h3>
         <div class="noodles">  
           <div class="item">
             <p>ラーメン</p>
@@ -99,7 +97,7 @@
           </div>
         </div>
         
-        <h3>飯もの</h3>
+        <h3 class="menu-heading">飯もの</h3>
         <div class="food">
           <div class="item">
             <p>チャーハン</p>
@@ -119,7 +117,7 @@
           </div>
         </div>
 
-        <h3>その他</h3>
+        <h3 class="menu-heading">その他</h3>
         <div class="others">
           <div class="item">
             <p>酢豚</p>
@@ -148,17 +146,15 @@
         </div>
       </div>
     </div>
+
     <div class="multiple">
-      <img src="images/multiple.jpg">
+      <img class="multiple-img" src="images/multiple.jpg">
     </div>
   
-    <footer>
-      <div class="container">
-        <a href="index.html"><img class="logo" src="images/logo.png" alt="名もなき中華料理屋"></a>
-        <p class="phone">03-0000-0000<br>
-          <span>定休日：火水</span></p>
-      </div>
+    <footer class="footer container">
+      <a class="f-logo-btn" href=""><img class="f-logo" src="images/logo.png" alt="名もなき中華料理屋"></a>
+      <p class="f-phone">03-0000-0000</p>
+      <p class="f-holiday">定休日：火水</p>
     </footer>
   </body>
 </html>
-
