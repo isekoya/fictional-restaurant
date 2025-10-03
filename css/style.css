@@ -272,8 +272,8 @@ ul,li {
   }
 
   .menu-content {
-    margin: 0 auto;
-    width: 492px;
+    margin: auto;
+    width: fit-content;
   }
 
   .menu-heading {
@@ -396,8 +396,8 @@ ul,li {
   }
 
   .menu-content {
-    margin: 0 auto;
-    width: 492px;
+    margin: auto;
+    width: fit-content;
   }
 
   .menu-heading {
